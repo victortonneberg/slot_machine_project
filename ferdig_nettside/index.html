@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor's Casino</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-overlay"></div>
+    <div class="container">
+        <h1>Luxe Casino Slot Machine</h1>
+        <div id="balance">Saldo: $<span id="balanceAmount">0</span></div>
+        <div id="slot-machine">
+            <div class="slot-overlay"></div>
+            <div id="reels">
+                <div class="reel"><div class="symbols"></div></div>
+                <div class="reel"><div class="symbols"></div></div>
+                <div class="reel"><div class="symbols"></div></div>
+            </div>
+        </div>
+        <div id="controls">
+            <div class="input-group">
+                <label for="depositAmount">Innskudd:</label>
+                <input type="number" id="depositAmount" placeholder="f.eks. 100">
+                <button id="depositBtn">Sett inn penger</button>
+            </div>
+            <div class="input-group">
+                <label for="lines">Antall linjer:</label>
+                <input type="number" id="lines" min="1" max="3" value="1" placeholder="1-3">
+            </div>
+            <div class="input-group">
+                <label for="bet">Innsats per linje:</label>
+                <input type="number" id="bet" min="1" value="1" placeholder="f.eks. 5">
+            </div>
+            <button id="spinBtn">Spinn!</button>
+        </div>
+        <div id="message"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
